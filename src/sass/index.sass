@@ -1,0 +1,42 @@
+*, *::before, *::after
+    margin: 0,
+    padding: 0
+    box-sizing: border-box
+
+$dark-blue: #1e2a54
+$light-blue: #5ce1e6
+$main-font: 'League Gothic'
+$main-font-size: 60px
+body 
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.main-background
+    background-color: $dark-blue
+    position: absolute
+    height: 100vh
+    width: 100vw
+    top: 0
+    left: 0
+    color: $light-blue
+    display: flex
+    flex-flow: row
+    font-family: $main-font
+    font-size: $main-font-size
+    padding: 10vh 20vw
+    gap: 10px
+
+.main-article
+    background-color: rgba(0, 0, 0, .5)
+    flex: 1
+    padding: 10px
+
+.main-image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+
+
